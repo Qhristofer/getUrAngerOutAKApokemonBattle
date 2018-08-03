@@ -6,6 +6,16 @@ thr0w = "gray"
 health = 100;
 turn = 0;
 
+         /*
+        ///\
+       ////\\
+      /////\\\
+     //////\\\\
+    ///////\\\\\
+   ////////\\\\\\
+  /////////\\\\\\\\
+ //////////\\\\\\\\\*/
+
 function setup(){
     createCanvas(1320,800);
     background("#66ccff");
@@ -72,7 +82,6 @@ const next_button = () =>{
     noStroke()
     fill("#66ccff")
     rect(200,80,50,40)
-    adject();
 
 }
 
@@ -118,8 +127,35 @@ function mouseClicked () {
     if (mouseX > 650 && mouseX < 750 && mouseY > 100 && mouseY < 200){click_on = 2; }
     if (mouseX > 550 && mouseX < 650 && mouseY > 200 && mouseY < 300){click_on = 3; }
     if (mouseX > 650 && mouseX < 750 && mouseY > 200 && mouseY < 300){click_on = 4; }
-    if (mouseX > 600 && mouseX < 700 && mouseY > 400 && mouseY < 450){next_button();}
+    if (mouseX > 600 && mouseX < 700 && mouseY > 400 && mouseY < 450){
+        next_button();
+        good();
+        setTimeout(function(){
+            location.href = "battlepage.html"
+        }, 1250)
+    }
 }
 
+//HTML
+const battlePage = () => {
+    location.href = "battlepage.html"
+}
+
+const attackPage =() => {
+    location.href = "index.html"
+}
+
+const good = () => {
+    var a = document.createElement("p")
+    var b = document.createTextNode("GOOD")
+    a.appendChild(b);
+    document.getElementById("div").appendChild(a);
+}
+
+const goback = () =>{
+    setTimeout(function(){
+        location.href = "index.html"
+    },5500)
+}
 
 

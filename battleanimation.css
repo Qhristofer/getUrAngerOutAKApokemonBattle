@@ -1,0 +1,150 @@
+#bam {
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  animation-name: grow;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+}
+
+#bro {
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  animation-name: grow;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+}
+
+#what {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        animation-name: what;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-duration: 4s;
+}
+
+@keyframes what {
+    0%{transform: rotate(45deg);
+    text-decoration-line: overline}
+    33%{transform: rotate(135deg);
+     text-decoration-line: underline}
+    66%{transform: rotate(225deg);
+    text-decoration: wavy}
+    99%{transform: rotate(315deg);
+        text-decoration-line: overline;
+    }
+}
+
+@keyframes grow {
+    10% {font-size: 40px;}
+    70% {font-size: 100px;}
+}
+
+body{
+    animation-name: setting;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+}
+
+@keyframes setting{
+    10% {background:#ffb3b3}
+    20% {background:#ff3333}
+    30% {background:#ddff99}
+    40% {background:#aaff00}
+    50% {background:#99c2ff}
+    60% {background:#0066ff}
+    70% {background:#737373}
+    100% {background: #000000}
+}
+
+#gif1{
+    animation-name: gif1;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+}
+
+#gif2{
+    animation-name: gif2;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+}
+
+#gif3{
+    animation-name: gif3;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+}
+
+@keyframes gif2{
+    0%{
+        opacity: 1;
+        position: absolute;
+        top: 10px;
+        width: 10px; height: 10px;
+        right:150px;}
+    30%{
+        top: 70px;
+        width: 30%; height: 30%;
+        right: 300px;}
+    60%{
+        width: 20%; height: 20%;}
+    90%{
+        top: 200px;
+        width: 10%; height: 20%;
+        opacity: 0;
+    }
+}
+
+@keyframes gif1{
+    0%{
+        opacity: 1;
+        position: absolute;
+        bottom: 50px;
+        left: 125px;
+        width: 20px; height: 20px;}
+    30%{
+        width: 40%; height: 40%;
+        left: 150px;}
+    60%{
+        width: 100px; height: 110px;
+        left: 200px;}
+    90%{
+        width: 10px; height: 20px;
+        left: 250px;
+        opacity: 0;}
+    }
+
+
+@keyframes gif3{
+    0%{
+        position: absolute;
+        opacity: 1;
+        left: 400px;
+        width: 30%; height: 30%;}
+    30%{
+        left: 300px;
+        transform: rotate(60deg);
+        width: 25%; height: 25%;
+        }
+    70%{
+        left: 200px;
+        transform: rotate(120deg);
+        opacity: .5;
+        width: 20%; height: 20%;}
+        
+    90%{
+        left: 100px;
+        transform: rotate(200deg);
+        width: 10%; height: 20%;
+        opacity: 0;
+    }
+}
