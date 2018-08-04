@@ -155,7 +155,7 @@ const good = () => {
 const goback = () =>{
     setTimeout(function(){
         location.href = "index.html"
-    },5500)
+    },6000)
 }
 
 
